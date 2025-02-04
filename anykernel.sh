@@ -4,16 +4,16 @@
 ### AnyKernel setup
 # global properties
 properties() { '
-kernel.string=ExampleKernel by osm0sis @ xda-developers
+kernel.string=RMX2195-Kernel @Kernelprjkt by osm0sis @ xda-developers
 do.devicecheck=0
 do.modules=0
 do.systemless=1
-do.cleanup=1
+do.cleanup=0
 do.cleanuponabort=0
-device.name1=
-device.name2=
-device.name3=
-device.name4=
+device.name1=RMX2195
+device.name2=RECE4244
+device.name3=realme c15
+device.name4=bengal
 device.name5=
 supported.versions=
 supported.patchlevels=
@@ -46,7 +46,7 @@ replace_string init.rc "cpuctl cpu,timer_slack" "mount cgroup none /dev/cpuctl c
 
 # init.qcom.rc
 backup_file init.qcom.rc;
-insert_line init.qcom.rc "nodiratime barrier=0" after "mount_all /fstab.qcom" "\tmount ext4 /dev/block/platform/omap/omap_hsmmc.0/by-name/userdata /data remount nosuid nodev noatime nodiratime barrier=0";
+insert_line init.qcom.rc "nodiratime barrier=0" after "mount_all /fstab.qcom" "\tmount ext4 /dev/block/bootdevice/by-name/userdata /data remount nosuid nodev noatime nodiratime barrier=0";
 append_file init.qcom.rc "bootscript" init.qcom;
 
 # fstab.qcom
