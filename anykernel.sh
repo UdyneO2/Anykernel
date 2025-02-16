@@ -4,15 +4,15 @@
 ### AnyKernel setup
 # global properties
 properties() { '
-kernel.string=RMX2195-Kernel @Kernelprjkt by osm0sis @ xda-developers
+kernel.string=Realme SM4250-Kernel @Kernelprjkt by osm0sis @ xda-developers
 do.devicecheck=0
 do.modules=0
 do.systemless=1
 do.cleanup=0
 do.cleanuponabort=0
 device.name1=RMX2195
-device.name2=RECE4244
-device.name3=realme c15
+device.name2=RMX2101
+device.name3=RMX2193
 device.name4=bengal
 device.name5=
 supported.versions=
